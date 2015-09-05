@@ -13,6 +13,7 @@
 		F5ECB80C1B9B55C4008E217E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5ECB80B1B9B55C4008E217E /* Images.xcassets */; };
 		F5ECB80F1B9B55C4008E217E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5ECB80D1B9B55C4008E217E /* LaunchScreen.xib */; };
 		F5ECB81B1B9B55C4008E217E /* Basketball_ScoreboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECB81A1B9B55C4008E217E /* Basketball_ScoreboardTests.swift */; };
+		F5ECB8251B9B59AD008E217E /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = F5ECB8241B9B59AD008E217E /* DS-DIGIB.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F5ECB8141B9B55C4008E217E /* Basketball ScoreboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basketball ScoreboardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ECB8191B9B55C4008E217E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5ECB81A1B9B55C4008E217E /* Basketball_ScoreboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basketball_ScoreboardTests.swift; sourceTree = "<group>"; };
+		F5ECB8241B9B59AD008E217E /* DS-DIGIB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIB.TTF"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,8 @@
 		F5ECB8011B9B55C4008E217E /* Basketball Scoreboard */ = {
 			isa = PBXGroup;
 			children = (
-				F5ECB8041B9B55C4008E217E /* AppDelegate.swift */,
 				F5ECB8061B9B55C4008E217E /* ViewController.swift */,
 				F5ECB8081B9B55C4008E217E /* Main.storyboard */,
-				F5ECB80B1B9B55C4008E217E /* Images.xcassets */,
-				F5ECB80D1B9B55C4008E217E /* LaunchScreen.xib */,
 				F5ECB8021B9B55C4008E217E /* Supporting Files */,
 			);
 			path = "Basketball Scoreboard";
@@ -90,6 +89,10 @@
 		F5ECB8021B9B55C4008E217E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F5ECB8241B9B59AD008E217E /* DS-DIGIB.TTF */,
+				F5ECB8041B9B55C4008E217E /* AppDelegate.swift */,
+				F5ECB80B1B9B55C4008E217E /* Images.xcassets */,
+				F5ECB80D1B9B55C4008E217E /* LaunchScreen.xib */,
 				F5ECB8031B9B55C4008E217E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,6 +198,7 @@
 				F5ECB80A1B9B55C4008E217E /* Main.storyboard in Resources */,
 				F5ECB80F1B9B55C4008E217E /* LaunchScreen.xib in Resources */,
 				F5ECB80C1B9B55C4008E217E /* Images.xcassets in Resources */,
+				F5ECB8251B9B59AD008E217E /* DS-DIGIB.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
