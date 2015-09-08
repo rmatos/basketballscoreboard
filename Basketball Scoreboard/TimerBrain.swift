@@ -16,7 +16,7 @@ class TimerBrain{
     
     func calculateTime(){
         
-        //TODO check calculatetime logic. Is creating a mess
+        //TODO check this logic. Is creating a mess
         if seconds != 0{
             --seconds
         }
