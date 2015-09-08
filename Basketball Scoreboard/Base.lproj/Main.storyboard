@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWY-PQ-PRl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWY-PQ-PRl">
                                 <rect key="frame" x="185" y="20" width="298" height="98"/>
                                 <fontDescription key="fontDescription" name="DS-Digital-Bold" family="DS-Digital" pointSize="120"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,12 +39,18 @@
                                 <state key="normal" title="+2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculatePointsHome:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wjd-CC-YO8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvL-TN-bw6">
                                 <rect key="frame" x="172" y="150" width="70" height="60"/>
                                 <state key="normal" title="+3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculatePointsHome:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dSx-0e-4mH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuw-mI-SGN">
                                 <rect key="frame" x="16" y="150" width="70" height="60"/>
@@ -54,24 +60,36 @@
                                 <state key="normal" title="+1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculatePointsHome:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fhr-z4-xAa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6w-VB-czq">
                                 <rect key="frame" x="16" y="201" width="226" height="60"/>
                                 <state key="normal" title="-1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculatePointsHome:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0bU-PE-0Fp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXl-ZO-bEa">
                                 <rect key="frame" x="509" y="150" width="70" height="60"/>
                                 <state key="normal" title="+2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculatePointsGuest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iuP-Gz-wFM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tl-QF-euS">
                                 <rect key="frame" x="587" y="150" width="70" height="60"/>
                                 <state key="normal" title="+3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculatePointsGuest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qnx-yz-FZm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAN-3b-TAG">
                                 <rect key="frame" x="431" y="150" width="70" height="60"/>
@@ -81,20 +99,26 @@
                                 <state key="normal" title="+1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculatePointsGuest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hu4-dG-ESY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVt-dG-M49">
                                 <rect key="frame" x="431" y="201" width="226" height="60"/>
                                 <state key="normal" title="-1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculatePointsGuest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lOi-Bf-lRk"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgY-aG-pIs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgY-aG-pIs">
                                 <rect key="frame" x="79" y="57" width="100" height="64"/>
                                 <fontDescription key="fontDescription" name="DS-Digital-Bold" family="DS-Digital" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dno-Xk-gT3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dno-Xk-gT3">
                                 <rect key="frame" x="494" y="57" width="100" height="64"/>
                                 <fontDescription key="fontDescription" name="DS-Digital-Bold" family="DS-Digital" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -105,30 +129,39 @@
                                 <state key="normal" title="Start/Stop Time">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startStopTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M5D-JG-EBC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9c-3E-V9w">
                                 <rect key="frame" x="310" y="201" width="46" height="30"/>
                                 <state key="normal" title="10">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg8-lh-2gq">
-                                <rect key="frame" x="256" y="201" width="46" height="30"/>
-                                <state key="normal" title="12">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <action selector="addFixedMinutes:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qL6-TZ-uBw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KW-2k-sJt">
                                 <rect key="frame" x="364" y="201" width="46" height="30"/>
                                 <state key="normal" title="3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addFixedMinutes:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2yO-jd-aFQ"/>
+                                </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fph-NH-mNd">
                                 <rect key="frame" x="232" y="269" width="94" height="29"/>
+                                <connections>
+                                    <action selector="addManualMinutes:" destination="vXZ-lx-hvc" eventType="valueChanged" id="wAH-Vi-TpI"/>
+                                </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="s9A-wh-88Q">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="s9A-wh-88Q">
                                 <rect key="frame" x="82" y="326" width="94" height="29"/>
+                                <connections>
+                                    <action selector="calculateFoulsHome:" destination="vXZ-lx-hvc" eventType="valueChanged" id="R7S-9S-yxk"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" text="Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJA-bW-Hf8">
                                 <rect key="frame" x="249" y="239" width="60" height="21"/>
@@ -138,6 +171,9 @@
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TmW-fP-2Ez">
                                 <rect key="frame" x="340" y="269" width="94" height="29"/>
+                                <connections>
+                                    <action selector="addManualSeconds:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Whd-Us-6Om"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj8-nq-aF9">
                                 <rect key="frame" x="357" y="239" width="60" height="21"/>
@@ -145,14 +181,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAP-64-Svh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAP-64-Svh">
                                 <rect key="frame" x="104" y="259" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="DS-Digital-Bold" family="DS-Digital" pointSize="50"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ksr-VM-gQ5">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ksr-VM-gQ5">
                                 <rect key="frame" x="497" y="326" width="94" height="29"/>
+                                <connections>
+                                    <action selector="calculateFoulsGuest:" destination="vXZ-lx-hvc" eventType="valueChanged" id="3H1-AE-oWE"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-bW-uqY">
                                 <rect key="frame" x="519" y="259" width="50" height="50"/>
@@ -160,6 +199,15 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg8-lh-2gq">
+                                <rect key="frame" x="256" y="201" width="46" height="30"/>
+                                <state key="normal" title="12">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addFixedMinutes:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="e0H-U5-K2X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -255,10 +303,17 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="guestFouls" destination="F5t-bW-uqY" id="NJ3-Kb-cVv"/>
+                        <outlet property="guestScore" destination="Dno-Xk-gT3" id="6L4-hJ-AyP"/>
+                        <outlet property="homeFouls" destination="jAP-64-Svh" id="gfa-Kf-qmP"/>
+                        <outlet property="homeScore" destination="RgY-aG-pIs" id="GTP-hm-xJE"/>
+                        <outlet property="timerUILabel" destination="DWY-PQ-PRl" id="BXu-LV-Vbo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274.5" y="378.5"/>
+            <point key="canvasLocation" x="137.5" y="381.5"/>
         </scene>
     </scenes>
 </document>
