@@ -16,29 +16,19 @@ class TimerBrain{
     
     func calculateTime(){
         
-        //TODO check this logic. Is creating a mess
-        if seconds != 0{
-            --seconds
+        if seconds >= 0{
+            seconds--
         }
-        
-        if seconds == 0 && minutes > 0{
-            --minutes
-        }
-        
-        println("\(minutes):\(seconds)")
-        
-        if minutes == 0 && seconds == 0{
-            println("Timer is done")
-            isTimerDone = true
-        }
-        
-        if minutes != 0 && seconds == 0{
+        if seconds == -1 && minutes >= 0{
+            minutes--
             seconds = 59
+        }
+        if minutes == 0 && seconds == 0{
+            isTimerDone = true
         }
     }
     
     func getFixedTime() -> String{
         return String(format: "%02d",minutes) + ":" + String(format: "%02d", seconds)
     }
-    
 }

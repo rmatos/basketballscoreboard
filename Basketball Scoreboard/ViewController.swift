@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var homeFouls: UILabel!
     @IBOutlet weak var guestFouls: UILabel!
     @IBOutlet weak var timerUILabel: UILabel!
+    @IBOutlet weak var minutesUIStepper: UIStepper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,8 +88,10 @@ class ViewController: UIViewController {
     @IBAction func addFixedMinutes(sender: UIButton) {
         var currentValue = sender.currentTitle!
         timerBrain.minutes = currentValue.toInt()!
+        minutesUIStepper.value = Double(timerBrain.minutes)
         timerBrain.isTimerDone = false
         timerUILabel.text = timerBrain.getFixedTime()
+        
     }
     
     @IBAction func addManualMinutes(sender: UIStepper) {

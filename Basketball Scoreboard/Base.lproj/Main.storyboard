@@ -151,7 +151,7 @@
                                     <action selector="addFixedMinutes:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2yO-jd-aFQ"/>
                                 </connections>
                             </button>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fph-NH-mNd">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="fph-NH-mNd">
                                 <rect key="frame" x="232" y="269" width="94" height="29"/>
                                 <connections>
                                     <action selector="addManualMinutes:" destination="vXZ-lx-hvc" eventType="valueChanged" id="wAH-Vi-TpI"/>
@@ -169,7 +169,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TmW-fP-2Ez">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="59" translatesAutoresizingMaskIntoConstraints="NO" id="TmW-fP-2Ez">
                                 <rect key="frame" x="340" y="269" width="94" height="29"/>
                                 <connections>
                                     <action selector="addManualSeconds:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Whd-Us-6Om"/>
@@ -308,6 +308,7 @@
                         <outlet property="guestScore" destination="Dno-Xk-gT3" id="6L4-hJ-AyP"/>
                         <outlet property="homeFouls" destination="jAP-64-Svh" id="gfa-Kf-qmP"/>
                         <outlet property="homeScore" destination="RgY-aG-pIs" id="GTP-hm-xJE"/>
+                        <outlet property="minutesUIStepper" destination="fph-NH-mNd" id="tmF-Sv-YPT"/>
                         <outlet property="timerUILabel" destination="DWY-PQ-PRl" id="BXu-LV-Vbo"/>
                     </connections>
                 </viewController>
